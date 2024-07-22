@@ -1,0 +1,28 @@
+.company__filter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .company__filter__name,
+    .company__filter__type,
+    .company__filter__industry {
+        display: block;
+        font-size: 17px;
+        font-weight: normal;
+        color: #2e313a;
+        line-height: 1.4;
+        padding: .6em 1.4em .5em .8em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border-radius: 12px;
+        background-color: #fff;
+        border: 1px solid #1e2228;
+    }
+}
+
+

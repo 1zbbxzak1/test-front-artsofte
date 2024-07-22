@@ -1,0 +1,12 @@
+<h5>Фильтр:</h5>
+<form [formGroup]="filterForm" class="company__filter">
+    <input class="company__filter__name" formControlName="name" placeholder="Введите название"/>
+    <select class="company__filter__type" formControlName="type">
+        <option value="">Все типы компаний</option>
+        <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+    </select>
+    <select class="company__filter__industry" formControlName="industry">
+        <option value="">Все виды деятельности</option>
+        <option *ngFor="let industry of industries" [value]="industry">{{ industry }}</option>
+    </select>
+</form>
