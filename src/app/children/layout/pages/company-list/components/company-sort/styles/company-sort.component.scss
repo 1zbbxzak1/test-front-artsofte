@@ -1,0 +1,38 @@
+.company__sort {
+    display: block;
+    font-size: 17px;
+    font-weight: normal;
+    color: #2e313a;
+    line-height: 1.4;
+    padding: .6em 1.4em .5em .8em;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.company__sort::-ms-expand {
+    display: none;
+}
+
+.company__sort:hover {
+    border-color: #888;
+}
+
+.company__sort:focus {
+    border-color: #aaa;
+    color: #222;
+    outline: none;
+}
+
+.company__sort option {
+    font-weight: normal;
+    font-size: 15px;
+    color: #2e313a;
+    line-height: 1;
+}

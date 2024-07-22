@@ -1,0 +1,7 @@
+<h5>Сортировка:</h5>
+<select (change)="onSortChange($event)" [value]="defaultSort" class="company__sort">
+    <option class="company__sort__item" value="">По умолчанию</option>
+    <option class="company__sort__item" value="business_name">По названию</option>
+    <option class="company__sort__item" value="type">По типу</option>
+    <option class="company__sort__item" value="industry">По виду деятельности</option>
+</select>
