@@ -1,0 +1,48 @@
+.map__container {
+    display: flex;
+    height: 70vh;
+
+    margin: 40px 80px;
+
+    gap: 20px;
+
+    border: 1px solid #1e2228;
+}
+
+.company__list {
+    width: 300px;
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    padding: 10px;
+
+
+    .company__list__item {
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    .company__list__item:not(:last-child) {
+        border-bottom: 1px solid #2e313a;
+    }
+
+    .company__list__item:hover {
+        color: #28aaff;
+    }
+
+    .company__list__item:active {
+        color: #005acd;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+ya-map {
+    flex: 1;
+    height: 100%;
+    border: 1px solid #1e2228;
+}

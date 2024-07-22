@@ -1,0 +1,16 @@
+<div class="map__container">
+    <ya-map [center]="mapCenter" [zoom]="mapZoom">
+        <ya-object-manager
+            (ready)="onObjectManagerReady($event)"
+            [options]="objectManagerOptions"
+        ></ya-object-manager>
+    </ya-map>
+
+    <div class="company__list">
+        <ul>
+            <li (click)="centerOnCompany(company)" *ngFor="let company of companies" class="company__list__item">
+                {{ company.business_name }}
+            </li>
+        </ul>
+    </div>
+</div>
