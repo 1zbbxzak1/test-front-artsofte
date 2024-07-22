@@ -1,0 +1,31 @@
+.nav__list {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+
+    background: white;
+    border-bottom: 1px solid #2e313a;
+
+    .nav__item {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        color: #1e2228;
+
+        align-items: center;
+    }
+
+    :hover {
+        color: #28aaff;
+    }
+
+    :active {
+        color: #005acd;
+    }
+}
