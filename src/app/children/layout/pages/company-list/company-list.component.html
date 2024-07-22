@@ -1,0 +1,17 @@
+<app-cache-strategy-modal (cacheStrategySelected)="onCacheStrategySelected($event)"
+                          *ngIf="showCacheModal"></app-cache-strategy-modal>
+<div class="company">
+    <div class="sort__section">
+        <app-company-filter (filterChanged)="onFilterChanged($event)" [companies]="originalCompanies"/>
+        <app-company-sort (sortChanged)="onSortChanged($event)"/>
+
+    </div>
+
+    <div class="company__list">
+        <div *ngFor="let company of companies">
+            <app-company-item [business_name]="company.business_name" [id]="company.id"
+                              [industry]="company.industry" [logo]="company.logo" [suffix]="company.suffix"
+                              [type]="company.type"></app-company-item>
+        </div>
+    </div>
+</div>

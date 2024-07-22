@@ -1,0 +1,36 @@
+.company__item {
+    border: 2px solid #2e313a;
+
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    .company__item__img {
+        display: flex;
+        align-self: center;
+        width: fit-content;
+        height: fit-content;
+        max-width: 30%;
+    }
+
+    .company__item__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 18px;
+        color: #1e2228;
+
+        gap: 10px;
+    }
+
+    .company__item__name {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 110%;
+        color: #1e2228;
+    }
+}
