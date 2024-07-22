@@ -1,0 +1,13 @@
+<div *ngIf="company$ | async as company; else loading" class="company__detail">
+    <img alt="логотип" class="company__item__img" src="{{ company.logo }}">
+    <div class="company__detail_info">
+        <h1>{{ company.business_name }}</h1>
+        <p>Industry: {{ company.industry }}</p>
+        <p>Catch Phrase: {{ company.catch_phrase }}</p>
+        <p>Phone Number: {{ company.phone_number }}</p>
+        <p>Address: {{ company.full_address }}</p>
+    </div>
+</div>
+<ng-template #loading>
+    <p>Loading...</p>
+</ng-template>
